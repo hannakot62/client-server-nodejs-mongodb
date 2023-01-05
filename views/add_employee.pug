@@ -1,0 +1,13 @@
+extends layout.pug
+block content 
+    .form-container 
+      form(id="empl-form", method='post', action='/add_employee' )     
+        label Surname
+          input(type="text" placeholder="enter surname"  name="surname")     
+        label Salary
+          input(type="text" placeholder="enter salary"  name="salary")  
+        label Manager
+          input(type="text" placeholder="enter manager" name="manager_surname")  
+        input(type="submit" value="add" class="submit" id="form-submit")
+
+  

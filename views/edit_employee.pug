@@ -1,0 +1,13 @@
+extends layout.pug
+block content 
+    .form-container 
+      form(id="empl-form", method='post', action='/edit_employee/'+employee.id+'?_method=PUT' )     
+        label Surname
+          input(type="text" placeholder="enter surname" value=employee.surname name="surname")     
+        label Salary
+          input(type="text" placeholder="enter salary" value=employee.salary name="salary")  
+        label Manager
+          input(type="text" placeholder="enter manager" value=employee.manager_surname name="manager_surname")  
+        input(type="submit" value="save" class="submit" id="form-submit")
+
+  

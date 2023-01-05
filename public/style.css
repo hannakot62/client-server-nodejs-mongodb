@@ -1,0 +1,128 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+}
+header {
+  background-color: rgb(67, 66, 83);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(63, 56, 72);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+  padding: 0 30px;
+  margin: 0;
+}
+table {
+  width: 90vw;
+  border: none;
+  margin: 5%;
+  color: rgb(17, 16, 28);
+}
+table th {
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  background: #d8d8d8;
+  font-size: 14px;
+}
+table tr th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+table tr th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+table tbody td {
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  vertical-align: top;
+}
+table tbody tr:nth-child(even) {
+  background: #f3f3f3;
+}
+table tbody tr td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+table tbody tr td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.search-label {
+  margin-left: 5%;
+  color: rgb(17, 16, 28);
+}
+.search {
+  margin: 2% 5% 0 1%;
+  height: 20px;
+  min-width: 250px;
+  border: rgb(151, 141, 163) 1px solid;
+  border-radius: 3px;
+}
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form label input {
+  margin: 15px;
+}
+.submit {
+  margin-top: 30px;
+  padding: 6px 10px;
+  color: white;
+  background-color: rgb(67, 66, 83);
+  border: rgb(67, 66, 83) 1px solid;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+button {
+  margin-right: 10px;
+  background-color: rgb(218, 205, 235);
+  color: rgb(17, 16, 28);
+  border: 1px solid rgb(17, 16, 28);
+  border-radius: 3px;
+  padding: 3px 15px;
+}
+button a {
+  color: rgb(17, 16, 28);
+  text-decoration: none;
+}

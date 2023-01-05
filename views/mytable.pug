@@ -1,0 +1,24 @@
+block mytable
+    if employees.length
+        table 
+            thead 
+                tr
+                    th id 
+                    th surname
+                    th salary 
+                    th manager
+                    th configure
+            tbody 
+                each e in employees
+                    tr 
+                        td #{e.id}
+                        td #{e.surname}
+                        td #{e.salary}
+                        td #{e.manager_surname}
+                        td 
+                            button
+                                a(href="http://localhost:3000/edit_employee/"+e.id  ) edit
+                            button 
+                                a(data-id=e.id) delete
+        script 
+            include script.js

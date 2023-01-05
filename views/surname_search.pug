@@ -1,0 +1,7 @@
+extends layout.pug
+block content 
+    label(class="search-label") Search by surname
+        input#search(class="search" placeholder="enter surname" )
+    include  mytable.pug
+    script 
+        include script.js
